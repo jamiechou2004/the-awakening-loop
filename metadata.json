@@ -1,0 +1,7 @@
+{
+  "name": "The Awakening Loop",
+  "description": "An interactive storytelling experience featuring a robot named JETI transitioning through 4 phases of awakening.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
