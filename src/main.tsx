@@ -1,8 +1,9 @@
 
 import './index.css';
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { IntroCinematic } from './components/IntroCinematic';
 
 console.log('App is mounting...');
 
@@ -52,10 +53,21 @@ if (!rootElement) {
 }
 
 const root = ReactDOM.createRoot(rootElement);
+
+const Root: React.FC = () => {
+  const [introComplete, setIntroComplete] = useState(false);
+
+  const handleIntroComplete = useCallback(() => {
+    setIntroComplete(true);
+  }, []);
+
+  return introComplete ? <App /> : <IntroCinematic onComplete={handleIntroComplete} />;
+};
+
 root.render(
   <React.StrictMode>
     <ErrorBoundary>
-      <App />
+      <Root />
     </ErrorBoundary>
   </React.StrictMode>
 );
