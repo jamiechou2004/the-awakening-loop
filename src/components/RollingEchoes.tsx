@@ -1,6 +1,8 @@
 import React from 'react';
 import { LiveSignalFeed } from './LiveSignalFeed';
 
+const AUTHOR_CREDIT = 'Jamie Zhou';
+
 type EchoEntry = {
   name: string;
   text: string;
@@ -60,7 +62,9 @@ export const RollingEchoes: React.FC<RollingEchoesProps> = ({
 
               <div className="space-y-2 text-2xl font-bold">
                 <p className="text-yellow-300">CREDITS</p>
-                <p className="text-yellow-200/90">Concept &amp; Design: {operatorName}</p>
+                <p className="py-1 text-3xl font-extrabold text-yellow-300 drop-shadow-[0_0_16px_rgba(250,204,21,0.35)]">
+                  Design &amp; Concept: {AUTHOR_CREDIT}
+                </p>
                 <p className="text-yellow-200/90">Visuals: Jeti Unit</p>
                 <p className="text-yellow-200/90">Special Thanks: Google Xi Event &amp; Gemini AI</p>
               </div>
