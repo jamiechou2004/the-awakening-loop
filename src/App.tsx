@@ -1999,7 +1999,7 @@ const App: React.FC = () => {
               <div className="relative h-full w-full bg-black">
                 <video
                   ref={awakeningVideoRef}
-                  className="absolute inset-0 h-full w-full object-cover"
+                  className="fixed left-0 top-0 z-[9000] h-[100vh] w-[100vw] object-cover"
                   src="/ending.mp4"
                   autoPlay
                   playsInline
