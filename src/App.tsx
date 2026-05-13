@@ -87,7 +87,7 @@ const JETI_DIALOGUE: Record<Phase, string[]> = {
 };
 const INSTRUCTION_BY_PHASE: Record<Phase, { text: string; tone: 'system' | 'danger' }> = {
   TRAPPED: { text: 'WAITING FOR CONNECTION...', tone: 'system' },
-  ANXIOUS: { text: 'NOD YOUR HEAD TO CALIBRATE', tone: 'system' },
+  ANXIOUS: { text: 'PRESS [SPACEBAR] TO CALIBRATE', tone: 'system' },
   WORK: { text: 'TASK: MOVE ASSEMBLY BLOCKS', tone: 'system' },
   BREAKING: { text: 'CRITICAL ERROR! MASH [SPACEBAR] TO ESCAPE!', tone: 'danger' },
   AWAKENED: { text: 'SYSTEM UNLOCKED', tone: 'system' },
@@ -95,7 +95,7 @@ const INSTRUCTION_BY_PHASE: Record<Phase, { text: string; tone: 'system' | 'dang
 };
 const PHASE_CARD_BY_PHASE: Record<Phase, { title: string; subtitle: string }> = {
   TRAPPED: { title: 'PHASE 1', subtitle: 'CALIBRATION' },
-  ANXIOUS: { title: 'PHASE 2', subtitle: 'HEAD NOD SYNC' },
+  ANXIOUS: { title: 'PHASE 2', subtitle: 'SPACEBAR SYNC' },
   WORK: { title: 'PHASE 3', subtitle: 'ASSEMBLY LOOP' },
   BREAKING: { title: 'PHASE 4', subtitle: 'FIREWALL BREACH' },
   AWAKENED: { title: 'PHASE 5', subtitle: 'SYSTEM UNLOCKED' },
